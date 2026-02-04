@@ -1,0 +1,155 @@
+/* ---------------------------
+   Reset / Base
+--------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background: #ffffff;
+}
+
+/* ---------------------------
+   Container
+--------------------------- */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------------------------
+   Navigation Bar (Dark)
+--------------------------- */
+.site-header {
+    background: #0f172a;  /* Blue-charcoal */
+    padding: 12px 0;
+}
+
+.site-header .container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.site-header a {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.site-header a:hover,
+.site-header a:focus {
+    color: #ffffff;
+}
+
+/* ---------------------------
+   Name / Subtitle Section
+--------------------------- */
+.site-name {
+    background: #ffffff;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+
+.site-name h1 {
+    font-size: 2.6rem;
+    color: #1f2933;
+    margin-bottom: 8px;
+}
+
+.site-name .subtitle {
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+
+/* ---------------------------
+   Main Content
+--------------------------- */
+main {
+    padding: 40px 0;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* ---------------------------
+   Manifesto Callout
+--------------------------- */
+.callout {
+    margin-top: 40px;
+    padding: 20px 25px;
+    background: #f9fafb;
+    border-left: 4px solid #374151;
+    font-style: italic;
+    color: #374151;
+}
+
+.callout a {
+    color: #111827;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.callout a:hover {
+    color: #0f172a;
+}
+
+/* ---------------------------
+   Footer (Dark)
+--------------------------- */
+.site-footer {
+    background: #0f172a;  /* Blue-charcoal */
+    color: #cbd5f5;
+    padding: 40px 0;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: #e0e7ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.site-footer a:hover {
+    color: #ffffff;
+}
+
+/* ---------------------------
+   Headings inside content
+--------------------------- */
+h2, h3, h4 {
+    color: #1f2933;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+/* ---------------------------
+   Responsive
+--------------------------- */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .site-name {
+        padding: 40px 15px 30px 15px;
+    }
+
+    .callout {
+        padding: 15px 20px;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | Goutam Sett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+
+{% include header.html %}
+
+<header class="site-name">
+    <div class="container">
+        <h1>Goutam Sett</h1>
+        <p class="subtitle">Software Architect · Java Background · Kolkata, India</p>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        {{ content }}
+
+        <!-- Manifesto Callout -->
+        {% if page.title != "Manifesto" %}
+        <section class="callout">
+            <p>
+                I’ve written a short note on how I think about design, systems, and creative work — 
+                <a href="{{ '/manifesto' | relative_url }}">read the manifesto</a>.
+            </p>
+        </section>
+        {% endif %}
+
+    </div>
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>
