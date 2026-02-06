@@ -1,40 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title }} | Goutam Sett</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
+
 <body>
 
-{% include header.html %}
+    <nav class="site-header">
+        <div class="container">
+            <!-- Identity -->
+            <a href="{{ '/' | relative_url }}" class="user-identity">
+                <div class="avatar">
+                    <!-- Placeholder for Avatar - ideally user provides one -->
+                    <div
+                        style="width:100%; height:100%; background: #ccc; display:flex; justify-content:center; align-items:center; font-family:sans-serif; color:white; font-size:12px;">
+                        GS</div>
+                </div>
+                <span class="user-name">Goutam Sett</span>
+            </a>
 
-<header class="site-name">
-    <div class="container">
-        <h1>Goutam Sett</h1>
-        <p class="subtitle">Software Architect · Java Background · Kolkata, India</p>
-    </div>
-</header>
+            <!-- Navigation -->
+            <div class="nav-links">
+                <!-- Dropdown for Work -->
+                <div class="nav-item">
+                    <a href="{{ '/#work' | relative_url }}">Work</a>
+                    <div class="dropdown-content">
+                        <a href="{{ '/work/' | relative_url }}">Professional Experience</a>
+                        <a href="{{ '/technical-blogs/' | relative_url }}">Technical Blogs</a>
+                    </div>
+                </div>
 
-<main>
-    <div class="container">
+                <!-- Dropdown for Passion -->
+                <div class="nav-item">
+                    <a href="{{ '/#passion' | relative_url }}">Passion</a>
+                    <div class="dropdown-content">
+                        <a href="{{ '/travelling/' | relative_url }}">Travelling</a>
+                        <a href="{{ '/passion/' | relative_url }}">Films</a>
+                        <a href="{{ '/photography/' | relative_url }}">Photography</a>
+                    </div>
+                </div>
+
+
+                <a href="{{ '/contact/' | relative_url }}">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
         {{ content }}
+    </main>
 
-        <!-- Manifesto Callout -->
-        {% if page.title != "Manifesto" %}
-        <section class="callout">
-            <p>
-                I’ve written a short note on how I think about design, systems, and creative work — 
-                <a href="{{ '/manifesto' | relative_url }}">read the manifesto</a>.
-            </p>
-        </section>
-        {% endif %}
-
-    </div>
-</main>
-
-{% include footer.html %}
+    <footer class="site-footer">
+        <div class="container" style="display:flex; justify-content:space-between; width:100%; align-items: center;">
+            <span>© 2026 Goutam Sett</span>
+            <a href="#" style="text-decoration: underline; color: inherit;">Back to Top &uarr;</a>
+            <span>Kolkata, India</span>
+        </div>
+    </footer>
 
 </body>
+
 </html>
