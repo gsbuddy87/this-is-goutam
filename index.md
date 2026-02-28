@@ -73,9 +73,9 @@ title: Home
             <div class="project-item">
                 <div class="project-content">
                     <span class="category-label">Development</span>
-                    <h3 class="project-title">Scalable Architecture and Java Systems</h3>
+                    <h3 class="project-title">Scalable Architecture and Systems</h3>
                     <p>Designing maintainable backends and refactoring legacy systems to ensure clarity and future-proofing.</p>
-                    <a href="{{ '/work/' | relative_url }}" class="btn-explore">Explore Work</a>
+                    <a href="{{ '/technical-blogs/' | relative_url }}" class="btn-explore">Explore Blogs</a>
                 </div>
                 <div class="project-image">
                     <img src="{{ '/assets/img/work.jpg' | relative_url }}" alt="Scalable Architecture" loading="lazy">
@@ -109,4 +109,3 @@ title: Home
             </div>
 
 </div> <!-- End main-content -->
-```
