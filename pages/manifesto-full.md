@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Manifesto
+title: The Manifesto
 permalink: /manifesto-full/
 ---
 
