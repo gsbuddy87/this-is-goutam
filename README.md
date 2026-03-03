@@ -1,12 +1,17 @@
-# This Is Goutam Portfolio
+# Goutam's Portfolio
 
-Welcome to Goutam's personal project and portfolio website! This site is built with Jekyll to serve as a fast and responsive personal hub.
+This repository contains the **source code** for Goutam's personal portfolio website.  
+The site itself is built with [Jekyll](https://jekyllrb.com/) to provide a fast, responsive, and modern hub for showcasing projects, ideas, and creative work.
 
-## 🌟 Key Features
-- **Film & Photography Galleries**: Highlighting visual arts passion.
-- **Technical Blogs**: A section to share knowledge and tech journeys.
-- **Work & Travel Documentation**: Logs of professional work and travel experiences.
-- **Responsive Layout**: Designed to look clean on both desktop and mobile devices.
+👉 You can access the live portfolio website here: [this-is-goutam](https://gsbuddy87.github.io/this-is-goutam/)
+
+---
+
+## Contribution Guidelines
+This GitHub codebase is **exclusively maintained by Goutam**.  
+Modifications, updates, or contributions can only be made by Goutam himself.
+
+---
 
 ## 🚀 Local Development Setup
 
