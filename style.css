@@ -399,16 +399,34 @@ section {
    Responsive
 --------------------------- */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
     .site-header .container {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .user-identity {
+        gap: 0.5rem;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-name {
+        font-size: 1rem;
     }
 
     .nav-links {
         gap: 1rem;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .site-footer .container {
