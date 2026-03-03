@@ -395,6 +395,22 @@ section {
     align-items: center;
 }
 
+.footer-item {
+    flex: 1;
+}
+
+.footer-item:nth-child(1) {
+    text-align: left;
+}
+
+.footer-item:nth-child(2) {
+    text-align: center;
+}
+
+.footer-item:nth-child(3) {
+    text-align: right;
+}
+
 /* ---------------------------
    Responsive
 --------------------------- */
@@ -430,9 +446,14 @@ section {
     }
 
     .site-footer .container {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .footer-item {
+        font-size: 0.8rem;
     }
 
     .intro-text {
